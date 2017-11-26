@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -17,79 +16,81 @@
 
     <TextView
         android:id="@+id/tv_title"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Base.TextAppearance.AppCompat.Body2"
-        android:layout_marginBottom="10dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="96dp"
-        android:padding="@dimen/cardview_default_radius"
         android:background="@color/cardview_light_background"
+        android:padding="@dimen/cardview_default_radius"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tv_imdb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_title"
         android:layout_marginLeft="110dp"
         android:layout_marginRight="170dp"
-        android:padding="@dimen/cardview_default_radius"
-        android:layout_below="@id/tv_title"
-        android:background="@color/cardview_light_background"
         android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:padding="@dimen/cardview_default_radius"
         android:textSize="20sp" />
+
     <TextView
+        android:id="@+id/tv_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="240dp"
-        android:layout_marginRight="30dp"
         android:layout_alignRight="@id/tv_imdb"
         android:layout_below="@id/tv_title"
-        android:background="@color/cardview_light_background"
-        android:id="@+id/tv_id"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+        android:background="@color/cardview_light_background"
+        android:textSize="20sp" />
+
     <TextView
+        android:id="@+id/tv_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/tv_id"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true"
         android:layout_marginLeft="96dp"
-        android:background="@color/cardview_light_background"
-        android:id="@+id/tv_year"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+        android:background="@color/cardview_light_background"
+        android:textSize="20sp" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_year"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="96dp"
-        android:background="@color/cardview_light_background"
-        android:layout_marginTop="10dp"
         android:id="@+id/tv_synopsis"
-        android:textSize="20sp"/>
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_year"
         android:layout_marginLeft="96dp"
-        android:background="@color/cardview_light_background"
-        android:id="@+id/tv_runtime"
-        android:layout_below="@id/tv_synopsis"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+        android:background="@color/cardview_light_background"
+        android:textSize="20sp" />
 
-
+    <TextView
+        android:id="@+id/tv_runtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_synopsis"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>
